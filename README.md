@@ -47,6 +47,54 @@ To identify **high-demand, low-supply opportunities (Blue Ocean Strategy)** and 
 
 ---
 
+## 📁 Dataset
+
+The dataset contains information about restaurants listed on Swiggy.
+
+### 🔑 Columns Description
+
+- **restaurant_name** → Name of the restaurant  
+- **city** → Location of the restaurant  
+- **cuisine** → Type of food offered  
+- **cost** → Average cost for two people  
+- **rating** → Customer rating (0–5)  
+- **rating_count** → Number of users who rated  
+
+📌 File: `restaurants.csv`
+
+---
+
+## 🔍 Key SQL Queries Explained
+
+### 1. Top Cities by Restaurant Count
+Used `COUNT()` and `GROUP BY` to identify cities with the highest number of restaurants.
+
+---
+
+### 2. Popular Cuisines
+Used `SUM(rating_count)` to measure demand instead of just counting restaurants.
+
+---
+
+### 3. Top Restaurants by City
+Used `RANK()` window function to find the best restaurants in each city based on rating and reviews.
+
+---
+
+### 4. Market Segmentation
+Used `CASE WHEN` to divide restaurants into Budget, Mid-range, and Luxury categories.
+
+---
+
+### 5. Blue Ocean Strategy
+Identified cuisines with:
+- Low supply (few restaurants)
+- High demand (high rating counts)
+
+This helps find expansion opportunities.
+
+---
+
 ## 🍴 Key Analysis
 
 ### 🔹 Top Cities by Restaurants
@@ -91,15 +139,6 @@ Identified opportunities where:
 - Expand mid-range restaurants in high-demand cities  
 - Focus on high-performing cuisines like Biryani  
 - Target cities with high demand but limited supply  
-
----
-
-## 📂 Project Structure
-
-📁 swiggy-data-analysis
-├── SWIGGY_DATA_ANALYSIS.sql
-└── README.md
-
 
 ---
 
