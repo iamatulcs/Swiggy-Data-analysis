@@ -7,7 +7,7 @@ Swiggy Restaurant Data Analysis Project
 Author : Atul Kumar Anupam
 Description : End-to-end analysis of restaurant data to identify market gaps,
 			  optimize pricing strategies, and recommend expansion locations.
-Database : MySQL / PostgreSQL
+Database : MySQL
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 */
 
